@@ -8,7 +8,26 @@
     box-sizing: border-box;
     
 }
-
+.final-score{
+    position: absolute;
+    left: 50%;
+    transform:  translateX(-50%);
+    top: 520px;
+    color:#555;
+    font-size: 18px;
+    font-family: 'Lato';
+    text-align: center;
+    padding: 10px;  
+    width: 160px;   
+    text-transform: uppercase;
+}
+.final-score{ outline: none; }
+#dice-1{
+    top:120px;
+}
+#dice-2{
+    top:250px;
+}
 .clearfix::after {
     content: "";
     display: table;
@@ -25,7 +44,6 @@ body {
     height: 100vh;
     color: #555;
 }
-
 .wrapper {
     width: 1000px;
     position: absolute;
@@ -44,9 +62,6 @@ body {
     height: 600px;
     padding: 100px;
 }
-
-
-
 /**********************************************
 *** PLAYERS
 **********************************************/
@@ -119,7 +134,7 @@ button {
     transition: background-color 0.3s, color 0.3s;
 }
 
-button:hover { font-weight: 600; }  
+button:hover { font-weight: 600; }
 button:hover i { margin-right: 20px; }
 
 button:focus {
@@ -136,10 +151,23 @@ i {
     margin-top: -4px;
     transition: margin 0.3s;
 }
+input{
+    position: relative;
+    width: 150px;
+    bottom: 110px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: Lato;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: text;
+    font-weight: 300;
+}
 
 .btn-new { top: 45px;}
 .btn-roll { top: 403px;}
-.btn-hold { top: 467px;}
+.btn-hold { top: 457px;}
+
 
 .dice {
     position: absolute;
